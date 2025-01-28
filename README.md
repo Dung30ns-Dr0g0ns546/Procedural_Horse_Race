@@ -1,1 +1,1 @@
-# Procedural_Horse_Race
+# Algorithm for Procedural Horse Race
