@@ -26,3 +26,20 @@ while keepGoing:
  roll a 0 or 1 value, put it into a coin
  add coin to the horse's position value in the array
 ```
+## printLane()
+```
+given a horse number and the array of horses
+loop from zero to TRACK_LENGTH
+  if the current loop index is equal to the horse's value
+    print the horse's id
+  otherwise
+    print a .
+```
+## isWinner()
+```
+result = false
+given a horse number and the array of horses
+if the current horse's value is equal to the TRACK_LENGTH
+  result = true
+  print "Horse {id} won!"
+return result
