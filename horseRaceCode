@@ -15,9 +15,9 @@ int main()
 
 
     for (int hn = 0; hn < NUM_HORSES; hn++){
-      advance(hn, horses);
+      forward(hn, horses);
       printLane(hn, horses);
-      if (isWinner(hn, horses)){
+      if (winner(hn, horses)){
         keepGoing = false;
       } // end if
     } // end for
@@ -28,3 +28,4 @@ int main()
 } // end while
 
 return 0:
+
