@@ -7,6 +7,9 @@ std::uniform_int_distribution<int> dist(0, 1)
 
 coin = dist(rd);
 
+void forward(hn, horses){
+
+
 int main()
   int horses[] = {0, 0, 0, 0, 0};
   bool keepGoing = true;
@@ -25,22 +28,3 @@ int main()
     std::cin.ignore();
 
 } // end while
-
-int forward(){
-  srand(time(0)); 
-
-  int randomNum = rand() % 2;
-
-  if (randomNum == 0) {
-    cout << "Heads" << endl;
-  } else {
-    cout << "Tails" << endl;
-  }
-
-  for (int i = 0; i < numHorses; ++i) {
-            if (rand() % 2 == 0) { // 50% chance to move forward
-                horsePositions[i]++;
-            }
-        }
-}
-
