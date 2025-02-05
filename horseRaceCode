@@ -13,10 +13,9 @@ int main()
 
   while (keepGoing){
 
-
     for (int hn = 0; hn < NUM_HORSES; hn++){
       forward(hn, horses);
-      printLane(hn, horses);
+      printTrackLane(hn, horses);
       if (winner(hn, horses)){
         keepGoing = false;
       } // end if
@@ -27,5 +26,21 @@ int main()
 
 } // end while
 
-return 0:
+int forward(){
+  srand(time(0)); 
+
+  int randomNum = rand() % 2;
+
+  if (randomNum == 0) {
+    cout << "Heads" << endl;
+  } else {
+    cout << "Tails" << endl;
+  }
+
+  for (int i = 0; i < numHorses; ++i) {
+            if (rand() % 2 == 0) { // 50% chance to move forward
+                horsePositions[i]++;
+            }
+        }
+}
 
