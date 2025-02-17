@@ -34,7 +34,7 @@ bool winner(hn, horses){
     return false;
 }
 
-int main()
+int main(){
   int horses[] = {0, 0, 0, 0, 0};
   bool keepGoing = true;
 
@@ -54,4 +54,4 @@ int main()
     std::cin.ignore();
 return 0;
 } // end while
-
+}
